@@ -5,5 +5,5 @@ resources:
 - ../../base/podinfo-kustomize
 images:
 - name: podinfo
-  newName: podinfo # {"$imagepolicy": "flux-system:podinfo:name"}
+  newName: ghcr.i # {"$imagepolicy": "flux-system:podinfo:name"}
   newTag: 5.2.0 # {"$imagepolicy": "flux-system:podinfo:tag"}
