@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: podinfo-helm
 resources:
-  - ../../base/podinfo-helm
+- ../../base/podinfo-helm
 patches:
 - target:
     kind: HelmRelease
