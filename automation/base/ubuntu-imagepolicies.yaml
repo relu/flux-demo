@@ -1,0 +1,45 @@
+apiVersion: image.toolkit.fluxcd.io/v1alpha2
+kind: ImagePolicy
+metadata:
+  name: ubuntu-calver
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: ubuntu
+  filterTags:
+    # Filter for image tags in the format 12.34
+    pattern: '^[0-9]{2}\.[0-9]{2}$'
+  policy:
+    alphabetical:
+      order: asc
+---
+apiVersion: image.toolkit.fluxcd.io/v1alpha2
+kind: ImagePolicy
+metadata:
+  name: ubuntu-codename
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: ubuntu
+  filterTags:
+    # Filter for image tags that only contain leters
+    pattern: '[a-z]+'
+  policy:
+    alphabetical:
+      order: asc
+---
+apiVersion: image.toolkit.fluxcd.io/v1alpha2
+kind: ImagePolicy
+metadata:
+  name: ubuntu-hirsute
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: ubuntu
+  filterTags:
+    # Filter for ubuntu hirsute rolling release image tags (timestamped)
+    pattern: '^hirsute-(?P<timestamp>[0-9]+)$'
+    extract: '$timestamp'
+  policy:
+    numerical:
+      order: asc
