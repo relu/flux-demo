@@ -12,4 +12,4 @@ patches:
       path: /spec/values
       value:
         image:
-          tag: 5.2.0 # {"$imagepolicy": "flux-system:podinfo:tag"}
+          tag: 5.0.0 # {"$imagepolicy": "flux-system:podinfo:tag"}
