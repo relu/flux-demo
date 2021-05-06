@@ -3,13 +3,5 @@ kind: Kustomization
 namespace: podinfo-helm
 resources:
 - ../../base/podinfo-helm
-patches:
-- target:
-    kind: HelmRelease
-    name: podinfo
-  patch: |-
-    - op: add
-      path: /spec/values
-      value:
-        image:
-          tag: 5.0.0 # {"$imagepolicy": "flux-system:podinfo:tag"}
+patchesStrategicMerge:
+- podinfo-values.yaml
