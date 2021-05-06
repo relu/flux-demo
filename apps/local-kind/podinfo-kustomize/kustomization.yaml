@@ -6,4 +6,4 @@ resources:
 images:
 - name: podinfo
   newName: podinfo # {"$imagepolicy": "flux-system:podinfo:image"}
-  newTag: 5.0.3 # {"$imagepolicy": "flux-system:podinfo:tag"}
+  newTag: 5.2.0 # {"$imagepolicy": "flux-system:podinfo:tag"}
