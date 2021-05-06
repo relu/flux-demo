@@ -12,8 +12,8 @@ patches:
         path: /spec/update/path
         value: ./apps/local-kind
   - target:
-      kind: podinfo
-      name: flux-system
+      kind: ImagePolicy
+      name: podinfo
     patch: |-
       - op: replace
         path: /spec/policy/semver/range
