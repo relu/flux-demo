@@ -5,4 +5,4 @@ resources:
 - ../../base/ubuntu
 images:
 - name: ubuntu
-  newTag: "20.04" # {"$imagepolicy": "flux-system:ubuntu-calver:tag"}
+  newTag: "21.04" # {"$imagepolicy": "flux-system:ubuntu-calver:tag"}
