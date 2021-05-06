@@ -4,3 +4,5 @@ resources:
   - automation.yaml
   - podinfo-imagepolicy.yaml
   - podinfo-imagerepository.yaml
+  - ubuntu-imagepolicies.yaml
+  - ubuntu-imagerepository.yaml
