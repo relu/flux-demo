@@ -23,7 +23,7 @@ spec:
     name: ubuntu
   filterTags:
     # Filter for image tags that only contain leters
-    pattern: '[a-z]+'
+    pattern: '^[a-z]+$'
   policy:
     alphabetical:
       order: asc
