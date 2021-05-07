@@ -6,4 +6,4 @@ resources:
 images:
 - name: podinfo
   newName: ghcr.io/stefanprodan/podinfo # {"$imagepolicy": "flux-system:podinfo:name"}
-  newTag: 5.2.0 # {"$imagepolicy": "flux-system:podinfo:tag"}
+  newTag: 5.1.4 # {"$imagepolicy": "flux-system:podinfo:tag"}
