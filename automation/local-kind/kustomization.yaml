@@ -17,4 +17,4 @@ patches:
     patch: |-
       - op: replace
         path: /spec/policy/semver/range
-        value: ~5.2.0
+        value: ~5.1.0
