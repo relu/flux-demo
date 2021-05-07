@@ -5,4 +5,4 @@ resources:
 - ../../base/ubuntu
 images:
 - name: ubuntu
-  newTag: "21.04" # {"$imagepolicy": "flux-system:ubuntu-hirsute:tag"}
+  newTag: "hirsute-20210422" # {"$imagepolicy": "flux-system:ubuntu-hirsute:tag"}
